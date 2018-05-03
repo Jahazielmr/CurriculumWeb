@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+
+<html>
+
+<head>
+  <title> Curriculum Vitae </title>
+
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" type="text/css" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+
+  
+  <script>
+    function clickCounter() {
+      if (typeof (Storage) !== "undefined") {
+        if (sessionStorage.clickcount) {
+          sessionStorage.clickcount = Number(sessionStorage.clickcount) + 1;
+        } else {
+          sessionStorage.clickcount = 1;
+        }
+        document.getElementById("result").innerHTML = "<ha ingresado a la pagina  " + sessionStorage.clickcount + " veces ";
+      } else {
+        document.getElementById("result").innerHTML = "Sorry, your browser does not support web storage...";
+      }
+
+    }
+  </script>
+
+</head>
+
+  <body onload="clickCounter()" style="background: powderblue">
+
+    <div id="result">0</div>
+
+    <div class="container">
+      <h2>Curriculum Vitae</h2>
+      <p>Soy Jahaziel Moreno Reyes de 19 años, soy un futuro Ingeniero en Sistemas que estudia en Unitec, tengo gran pasion
+        por mi carrera, altamente competitivo y calificado.</p>
+      <p>Hablo el idioma Español e ingles como base y de una manera moderada el italiano.</p>
+      <p> </p>
+      <p>Click en la imagen para hacerla mas grande</p>
+      <div class="row">
+        <div class="col-md-4">
+          <div class="thumbnail">
+            <a href="jazz.jpg" target="_blank">
+              <img class="img-responsive" src="jazz.jpg" alt="Chania" width="250" height="180">
+              <div class="caption">
+                <p>Me apasiona el arte.</p>
+                <p>Puedo ejecutar diversos instrumentos como Piano, guitarra, violin, entre otros.</p>
+                <p>Gran experiencia actuando en teatro y cortometrajes.</p>
+              </div>
+            </a>
+          </div>
+        </div>
+        <div class="col-md-4">
+          <div class="thumbnail">
+            <a href="jazz2.jpg" target="_blank">
+              <img class="img-responsive" src="jazz2.jpg" alt="Chania" width="250" height="180">
+              <div class="caption">
+                <p>Amplios conocimientos en programacion, Base de datos y seguridad informatica.</p>
+                <p> Muy curioso e investigador. </p>
+                <p>.</p>
+              </div>
+            </a>
+          </div>
+        </div>
+        <div class="col-md-4">
+          <div class="thumbnail">
+            <a href="Unitec.jpg" target="_blank">
+              <img class="img-responsive" src="Unitec.jpg" alt="Chania" width="250" height="180">
+              <div class="caption">
+                <p>Estudiante de 3 año de Unitec en la carrera de Ingenieria en Sistemas.</p>
+                <p> Determinado y con habilidades de lider </p>
+                <p>.</p>
+              </div>
+            </a>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="container">
+      <h2>Contacto</h2>
+      <button type="button" class="btn btn-primary btn-lg" input type="submit" value="enviar" onclick="location='info.html'" onload="clickCounter()">Informacion de contacto</button>
+    </div>
+
+    <!--<div id="result">0</div>
+
+<script>
+if (typeof(Storage) !== "undefined") {
+    // Store
+	document.getElementById("result").innerHTML = localStorage.getItem("visit");
+    
+    localStorage.setItem("visit", Number(document.getElementById("result").innerHTML+1));
+    
+	} else {
+    document.getElementById("result").innerHTML = "Sorry, your browser does not support Web Storage...";
+}
+
+</script>
+</-->
+
+
+
+
+</body>
